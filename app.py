@@ -18,7 +18,7 @@ def app_post():
     new_post = request.get_json()
     with (open("data.json", "r")) as file:
         posts = json.load(file)
-        post.insert(0, new_post) #add the new post at the top
+        posts.insert(0, new_post) #add the new post at the top
     with (open("data.json", "w")) as file:
         json.dump(posts, file, indent=4)
     return jsonify({"status": "success"}), 201
