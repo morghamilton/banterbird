@@ -4,7 +4,7 @@
 <button onclick= 'login()' > Login </button>
 <script>
     function login(){
-        const unsername = document.getElementsById("usernameInput").value.trim();
+        const username = document.getElementById("usernameInput").value.trim();
         if (username.length > 0) {
             localStorage.setItem("username", username);
             window.location.href = "/";

@@ -8,7 +8,7 @@ def index():
     return render_template("index.html")
 
 @app.route('/login')
-def index():
+def login():
     return render_template("login.html")
 
 @app.route('/api/posts')

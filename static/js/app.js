@@ -1,6 +1,6 @@
 const username = localStorage.getItem("username");
 if (!username) {
-    window.location.href = "/login.html";
+    window.location.href = "/login";
 }
 
 function renderPost(post, isNew = false) {
